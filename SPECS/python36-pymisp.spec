@@ -2,6 +2,7 @@
 %define pybasever 3.6
 %define pylibdir /usr/%{_lib}/python%{pybasever}/site-packages
 %define __requires_exclude ^/opt/python/(.*)$
+%define _unpackaged_files_terminate_build 0
 
 Name:		python36-pymisp
 Version:	2.4.119.1
@@ -30,7 +31,7 @@ Python interface to MISP
 #intentionally left blank
 
 %install
-git clone https://github.com/MISP/PyMISP.git
+git clone https://github.com/MISP/PyMISP.git --branch v2.4.119.1
 cd PyMISP
 git submodule update --init
 python3 setup.py install --root=$RPM_BUILD_ROOT
