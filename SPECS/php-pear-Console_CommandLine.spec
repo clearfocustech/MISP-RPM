@@ -9,7 +9,7 @@ Summary:    A full featured command line options and arguments parser
 Group:        Development/Libraries
 License:    LGPLv2+
 URL:        http://pear.php.net/package/%{pear_name}
-Source0:    http://download.pear.php.net/get/%{pear_name}-%{version}.tgz
+Source0:    http://download.pear.php.net/package/%{pear_name}-%{version}.tgz
 
 BuildArch:          noarch
 BuildRequires:      php > 7.0
